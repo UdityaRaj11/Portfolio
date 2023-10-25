@@ -14,6 +14,7 @@ body {
   width: 100%;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,9 +46,19 @@ section img.background {
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
-  width: 100vmax;
+  width: 100%;
   z-index: -1;
 }
+
+section h1{
+  animation: slideInUp 1s ease-in-out;
+} 
+
+section h2{
+  animation: slideInUp 1s ease-in-out;
+}
+
+
 
 h1 {
   font-family: "Cormorant Garamond", serif;
@@ -78,7 +89,7 @@ p {
 }
 
 p.large {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 p.small {
@@ -114,6 +125,23 @@ a:hover {
 }
 
 .container .box {
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.edcontainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 650px;
+  margin: 20px auto;
+}
+
+.edcontainer .box {
   border-radius: 10px;
   border: 1px solid rgb(204, 204, 204);
   display: flex;
