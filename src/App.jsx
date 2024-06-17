@@ -27,7 +27,7 @@ import "./styles.css";
 const siteProps = {
   name: "Uditya Raj",
   title: "Developer & Innovator",
-  email: "uditya.123.raj@gmail.com",
+  email: "udityaraj.18024@gmail.com",
   gitHub: "https://github.com/UdityaRaj11",
   instagram: "https://www.instagram.com/uditya_raj_001",
   linkedIn: "https://www.linkedin.com/in/uditya-raj-b6152b224",

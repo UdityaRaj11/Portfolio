@@ -24,7 +24,7 @@ const imageAltText = "black and white abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a Computer Science and Engineering student at Siksha 'O' Anusandhan University. I'm a Passionate Learner and Problem Solver using Technology, striving to contribute towards World's Sustainable Growth.";
+  "A Computer Science and Engineering student at Siksha 'O' Anusandhan University. As a passionate learner and problem solver, using technology to contribute towards collaboration and world's sustainable growth.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -35,7 +35,7 @@ const skillsList = [
   "Deep Learning",
   "Flutter Development",
   "Web Development",
-  "User experience", 
+  "User experience",
   "User interface",
   "Ideation",
   "Leadership",
@@ -47,7 +47,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my Solution Development experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my software development experiences I continually look for new and better ways to make tech accessible by all.";
 
 const About = () => {
   return (
@@ -57,29 +57,21 @@ const About = () => {
         style={{
           backgroundColor: "white",
           width: "50%",
-          padding: "4rem",
+          padding: "3rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>Who I am</h2>
         <p className="large">{description}</p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25vm",
-            margin: "2rem 1rem",
-            gap: "5rem",
-          }}
-        >
+        <ul>
           {skillsList.map((skill) => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "3px 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: "3px" }}>{detailOrQuote}</p>
       </div>
     </section>
   );

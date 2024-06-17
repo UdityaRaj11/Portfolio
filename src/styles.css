@@ -35,7 +35,7 @@ section.min-height {
 }
 
 section.padding {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 section img.background {
@@ -48,6 +48,27 @@ section img.background {
   transform: translate(-50%, 0);
   width: 100%;
   z-index: -1;
+}
+
+section img.mypic {
+  display: block; 
+  margin: 0 auto; 
+  height: auto; 
+  max-height: 100%; 
+  width: 100%; 
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  pointer-events: none;
+  z-index: -2; 
+}
+
+section img.image{
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
 }
 
 section h1{
@@ -70,9 +91,18 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  text-align: left;
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+}
+@media (max-width: 900px) {
+  h1 {
+      font-size: 5rem; /* Tablet font size */
+  }
+  h2 {
+      font-size: 1.5rem; /* Tablet font size */
+  }
 }
 
 h3 {
@@ -86,14 +116,16 @@ p {
   line-height: 1.5;
   margin-bottom: 0;
   font-weight: 300;
+  text-align: left;
 }
 
 p.large {
-  font-size: 21px;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 p.small {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 hr {
@@ -108,6 +140,14 @@ li::marker {
   color: #4e567e;
 }
 
+ul {
+  text-align: left;
+  columns: 2;
+  font-size: 1.1rem;
+  margin: 2rem 1rem;
+  gap: 5rem;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -116,11 +156,10 @@ a {
 a:hover {
   color: #4e567e;
 }
-
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-template-columns: 650px;
   margin: 20px auto;
 }
 
@@ -140,6 +179,50 @@ a:hover {
   grid-template-columns: 650px;
   margin: 20px auto;
 }
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px auto;
+  }
+  .container .box {
+    padding: 15px 10px;
+  }
+
+  p.small {
+    font-size: 0.8rem;
+  }
+
+  .edcontainer {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+  }
+  p.large {
+      font-size: 0.8rem; 
+  }
+  p{
+      font-size: 0.7rem; 
+  }
+  ul {
+      gap: 1rem;
+      font-size: 0.6rem; 
+      margin: 1rem 0.5rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  
+  }
+  section img.image{
+    width: 0
+  }
+}
+
 
 .edcontainer .box {
   border-radius: 10px;
